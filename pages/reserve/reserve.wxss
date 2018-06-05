@@ -1,0 +1,170 @@
+page{
+    height: 100%;
+}
+
+.container{
+    height:100%;
+    width: 100%;
+    /* background-color: gold;   */
+    display: flex;
+    flex-direction: column; 
+    justify-content:   flex-start;
+    align-items: center ;
+    
+}
+/*  -------------------------------选择会议室部分----------------------------------------- */
+.slect{
+    /* background-color: salmon; */
+    height: 24%;
+    width: 100%;
+}
+
+
+/*  -------------------------------通知--------------- */
+.notice{
+    background-color:  antiquewhite;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.notice-text{
+    color: red;
+    display: flex;
+    position: relative;
+    left: 20rpx;
+}
+
+/*  -------------------------------群及会议室条件------- */
+.group{
+    /* background-color: darkcyan; */
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content:  space-between;
+    border-bottom: 0.5rpx solid black;
+
+}
+
+.group-picker{
+    display: flex;
+    position: relative;
+    left: 30rpx;
+    flex-direction: row; 
+}
+
+.group-checkbox{
+    width: 70%;
+    display: flex;
+    position: relative;
+    right: 20rpx;
+    justify-content:  space-around  ;
+}
+
+/*  -------------------------------人数选择----------*/
+.people_num{
+    /* background-color: indigo; */
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content:  space-between;
+   
+}
+
+.people-text{
+     position: relative;
+    left: 50rpx;
+    font-size: 0.7em;
+}
+
+.people-slider{
+    width: 70%;
+}
+/*  -------------------------------日期及时间选择------------ */
+
+.date-text{
+    position: relative;
+    left: 50rpx;
+    font-size: 0.7em;
+    /* border-right: 4rpx solid gainsboro; */
+}
+
+.time-text{
+    position: relative;
+    left: 10rpx;
+    font-size: 0.7em;
+    /* border-right: 4rpx solid gainsboro; */
+}
+
+.date{
+    /* background-color: gray; */
+    height: 25%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:  space-between ;
+    border-bottom: 1rpx solid black;
+}
+
+.date-picker{
+    position: relative;
+    left: 25rpx;
+}
+
+.time-start{
+    position: relative;
+    right: 10rpx;
+}
+
+.time-end{
+    position: relative;
+    right: 45rpx;
+}
+
+/*  -------------------------------会议室滑动浏览界面----------------------------------- */
+
+.scroll-container{
+    height: 76%;
+}
+
+.meetingroom{
+    height: 23%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.meetingroom-in{
+    height: 94%;
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content:  space-between
+}
+
+.meetingroom-image{
+    height: 100%;
+    width: 30%; 
+}
+
+.meetingroom-information{
+    height: 100%;
+    width: 65%;
+    display: flex;
+    justify-content:  space-around;
+}
+
+.meetingroom-information-item
+{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+

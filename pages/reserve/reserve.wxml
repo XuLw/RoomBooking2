@@ -1,0 +1,114 @@
+<view class='container'>
+
+<!---------------------------------选择会议室部分-----------------------------------------  -->
+
+    <view class='slect'>
+<!--   -------------------------------通知---------------  -->
+        <view class='notice'>
+            <text class='notice-text' space="true"> 通知：{{notice}}</text>
+        </view>
+<!-- -------------------------------群及会议室条件------- -->
+        <view class='group'>
+            <picker class="group-picker" bindchange="bindGroupChange" value="{{group_value}}" range="{{group}}">
+                <view>
+                    {{group[group_value]}}
+                </view>
+            </picker>
+
+            <checkbox-group class="group-checkbox" bindchange="itemChange">
+                <label wx:for="{{items}}">
+                    <checkbox checked="{{item.checked}}" />{{item.value}}
+                </label>
+            </checkbox-group>
+        </view>
+<!-- -------------------------------人数选择---------- -->
+        <view class='people_num'>
+            <text class='people-text'> 人数</text>
+            <slider class='people-slider' bindchange="bindPeopleChange" min="5" max="50" show-value/>
+        </view>
+<!-- -------------------------------日期及时间选择------------ -->
+        <view class='date'>
+            <text class='date-text'>日期</text>
+            <picker class='date-picker' mode="date" value="{{date}}" start="2018-05-23" end="2019-09-01" bindchange="bindDateChange">
+                <view> {{date}} </view>
+            </picker>
+            <text class='time-text'>时间</text>
+            <picker mode="time" value="{{time_start}}" bindchange="bindTimeChange_start">
+                <view class='time-start'>
+                    {{time_start}}
+                </view>
+            </picker>
+
+            <picker mode="time" value="{{time_end}}" bindchange="bindTimeChange_end">
+                <view class='time-end'>
+                    —— {{time_end}}
+                </view>
+            </picker>
+        </view>
+
+    </view>
+<!-- -------------------------------会议室滑动浏览界面----------------------------------- -->
+    <scroll-view class='scroll-container' scroll-y>
+        
+        <view class='meetingroom'>
+            <view class='meetingroom-in'>
+                <image class='meetingroom-image' src="{{src}}"></image>
+                <view class='meetingroom-information'>
+                    <view class='meetingroom-information-item'>{{building}}</view>
+                    <view class='meetingroom-information-item'>{{room}}</view>
+                    <view class='meetingroom-information-item'>{{pNum}}</view>
+                </view>
+            </view> 
+        </view>
+
+        <view class='meetingroom'>
+            <view class='meetingroom-in'>
+                <image class='meetingroom-image' src="{{src}}"></image>
+                <view class='meetingroom-information'>
+                    <view class='meetingroom-information-item'>{{building}}</view>
+                    <view class='meetingroom-information-item'>{{room}}</view>
+                    <view class='meetingroom-information-item'>{{pNum}}</view>
+                </view>
+            </view> 
+        </view>
+
+        <view class='meetingroom'>
+            <view class='meetingroom-in'>
+                <image class='meetingroom-image' src="{{src}}"></image>
+                <view class='meetingroom-information'>
+                    <view class='meetingroom-information-item'>{{building}}</view>
+                    <view class='meetingroom-information-item'>{{room}}</view>
+                    <view class='meetingroom-information-item'>{{pNum}}</view>
+                </view>
+            </view> 
+        </view>
+
+        <view class='meetingroom'>
+            <view class='meetingroom-in'>
+                <image class='meetingroom-image' src="{{src}}"></image>
+                <view class='meetingroom-information'>
+                    <view class='meetingroom-information-item'>{{building}}</view>
+                    <view class='meetingroom-information-item'>{{room}}</view>
+                    <view class='meetingroom-information-item'>{{pNum}}</view>
+                </view>
+            </view> 
+        </view>
+
+        <view class='meetingroom'>
+            <view class='meetingroom-in'>
+                <image class='meetingroom-image' src="{{src}}"></image>
+                <view class='meetingroom-information'>
+                    <view class='meetingroom-information-item'>{{building}}</view>
+                    <view class='meetingroom-information-item'>{{room}}</view>
+                    <view class='meetingroom-information-item'>{{pNum}}</view>
+                </view>
+            </view> 
+        </view>
+
+        
+        
+    </scroll-view>
+
+
+
+</view>
